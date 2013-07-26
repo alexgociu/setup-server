@@ -1,8 +1,6 @@
 #!/bin/bash
 # Simple setup.sh for configuring Ubuntu 12.04 LTS instance
 
-sudo apt-get install vim
-
 # Add ppa for php5.4
 
 sudo apt-get install python-software-properties

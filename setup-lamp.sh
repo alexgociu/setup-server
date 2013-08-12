@@ -13,7 +13,7 @@ sudo apt-get install apache2
 
 # Install mysql5.5
 
-sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+sudo apt-get install mysql-server php5-mysql
 
 # Activate mysql
 

@@ -25,7 +25,7 @@ sudo /usr/bin/mysql_secure_installation
 
 # Install php
 
-sudo apt-get install php5 php5-fpm php5-cli php5-cgi php5-readline libapache2-mod-php5 php5-mcrypt
+sudo apt-get install php5 php5-fpm php5-cli php5-cgi php5-readline libapache2-mod-php5 php5-mcrypt php5-gd
 
 # Install python (required for phpsh)
 

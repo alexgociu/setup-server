@@ -44,10 +44,10 @@ cd $HOME
 sudo su newuser
 mkdir $HOME/.ssh
 chmod 700 $HOME/.ssh
-cat id_rsa.pub.tmp >> $HOME/.ssh/authorized_keys
+sudo cat id_rsa.pub.tmp >> $HOME/.ssh/authorized_keys
 chmod 600 $HOME/.ssh/authorized_keys
 exit
 rm id_rsa.pub.tmp
 ```
 
-Tell the new user to use [these instructions](docs/setup-user.md) to connect to github and setup their own individual dev environment.
+Tell the new user to use [these instructions](setup-user.md) to connect to github and setup their own individual dev environment.

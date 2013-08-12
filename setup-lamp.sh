@@ -1,9 +1,12 @@
 #!/bin/bash
 # Simple setup.sh for configuring Ubuntu 12.04 LTS instance
 
-# Add ppa for php5.4
+# Enable adding PPAs
 
 sudo apt-get install python-software-properties
+
+# Add ppa for php5.4
+
 sudo add-apt-repository ppa:ondrej/php5
 sudo apt-get update
 

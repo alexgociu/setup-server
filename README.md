@@ -11,6 +11,7 @@ Install git and clone this rep
 
 ```
 cd $HOME
+sudo apt-get install vim
 sudo apt-get install -y git-core
 git clone https://github.com/alexgociu/setup-server.git
 ```
@@ -32,7 +33,7 @@ Use [these instructions](docs/add-user.md) to add users for yourself and for you
 After all the users are added, edit sshd config
 
 ```
-vi /etc/ssh/sshd_config
+vim /etc/ssh/sshd_config
 ```
 
 Disable ssh password auth and enable rsa auth
@@ -51,7 +52,7 @@ sudo service ssh restart
 Update the hostname and reboot
 
 ```
-sudo vi /etc/hostname
+sudo vim /etc/hostname
 sudo reboot
 ```
 

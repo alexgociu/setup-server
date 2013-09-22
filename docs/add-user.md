@@ -3,7 +3,7 @@ Add a user to a remote instance
 
 Add the remote instance hostname to the user's local computer hosts
 ```
-sudo vi /etc/hosts
+sudo vim /etc/hosts
 ```
 
 Generate an ssh key pair on the user's local computer if none is already available
@@ -13,7 +13,7 @@ ssh-keygen -t rsa -C "email@example.com"
 
 If generated key is not the default one "id_rsa.pub" than update ssh config and link remote machine hostname with the key
 ```
-vi ./ssh/config
+vim ./ssh/config
 ```
 
 ```

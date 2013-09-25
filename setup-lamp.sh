@@ -60,4 +60,15 @@ git clone git://github.com/facebook/phpsh.git $HOME/phpsh
 cd $HOME/phpsh
 sudo python2.7 setup.py install
 
+# Install phpunit
+
+sudo apt-get upgrade pear
+sudo pear channel-discover pear.phpunit.de
+sudo pear channel-discover pear.symfony-project.com
+sudo pear channel-discover components.ez.no
+sudo pear channel-discover pear.symfony.com
+sudo pear update-channels
+sudo pear upgrade-all
+sudo pear install --alldeps phpunit/PHPUnit
+
 # TODO setup htaccess login for dev area and force https

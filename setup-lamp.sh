@@ -13,6 +13,7 @@ sudo apt-get update
 # Install apache2
 
 sudo apt-get install apache2
+sudo adduser www-data dev
 
 # Install mysql5.5
 

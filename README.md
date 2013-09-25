@@ -11,6 +11,7 @@ Install git and clone this rep
 
 ```
 cd $HOME
+sudo addgroup dev
 sudo apt-get install vim
 sudo apt-get install -y git-core
 git clone https://github.com/alexgociu/setup-server.git

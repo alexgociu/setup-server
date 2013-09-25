@@ -31,9 +31,8 @@ Ssh to the remote machine
 ssh username@hostname
 ```
 
-Create dev group if not exists, create user and grant sudo rights
+Create user in dev group and grant sudo rights
 ```
-sudo addgroup dev
 sudo adduser --ingroup dev newuser
 sudo adduser newuser sudo
 ```

@@ -29,6 +29,11 @@ sudo chgrp -R dev /etc/apache2/auth
 sudo chmod -R 770 /etc/apache2/auth
 touch /etc/apache2/auth/.htpasswd
 
+# Enable ssl and rewrite modules
+
+sudo a2enmod ssl
+sudo a2enmod rewrite
+
 # Install mysql5.5
 
 sudo apt-get install mysql-server php5-mysql

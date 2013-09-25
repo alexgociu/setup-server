@@ -13,7 +13,17 @@ sudo apt-get update
 # Install apache2
 
 sudo apt-get install apache2
+
+# Add apache to dev group
+
 sudo adduser www-data dev
+
+# Create .htpasswd
+
+sudo mkdir /etc/apache2/auth
+sudo chgrp -R dev /etc/apache2/auth
+sudo chmod -R 770 /etc/apache2/auth
+touch /etc/apache2/auth/.htpasswd
 
 # Install mysql5.5
 

@@ -14,11 +14,15 @@ sudo apt-get update
 
 sudo apt-get install apache2
 
+# Install apache-utils which contains htpasswd
+
+sudo apt-get install apache2-utils
+
 # Add apache to dev group
 
 sudo adduser www-data dev
 
-# Create .htpasswd
+# Create default .htpasswd
 
 sudo mkdir /etc/apache2/auth
 sudo chgrp -R dev /etc/apache2/auth

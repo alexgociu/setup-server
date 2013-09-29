@@ -18,9 +18,11 @@ sudo apt-get install apache2
 
 sudo apt-get install apache2-utils
 
-# Add apache to dev group
+# Add apache to dev group, and make www accessible to devs
 
 sudo adduser www-data dev
+sudo chgrp -R dev /var/www
+sudo chmod -R 775 /var/www
 
 # Create default .htpasswd
 
